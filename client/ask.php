@@ -1,18 +1,29 @@
 <div class="container">
-<h1 class="heading">Ask Quetions</h1>
+<h1 class="heading">Ask A Question </h1>
 
 <form action="./server/requests.php" method="post">
- 
-   <div class="col-6 offset-sm-3 margin-bottom-15">
-    <label for="email" class="form-label">User email</label>
-    <input type="text" name="email" class="form-control" id="email" placeholder="Enter user email">
-  </div>
-   <div class="col-6 offset-sm-3 margin-bottom-15">
-    <label for="password" class="form-label">User Password</label>
-    <input type="password" name="password" class="form-control" id="password" placeholder="Enter user password">
 
   <div class="col-6 offset-sm-3 margin-bottom-15">
-  <button type="submit" name="login" class="btn btn-primary">submit</button>
+    <label for="title" class="form-label">Question</label>
+    <input type="text" name="title" class="form-control" id="title" placeholder="Enter your Question">
   </div>
+
+  <div class="col-6 offset-sm-3 margin-bottom-15">
+    <label for="description" class="form-label">Description</label>
+    <textarea name="description" class="form-control" id="description" placeholder="Enter Description Of Question"></textarea>
+  </div>
+
+  <div class="col-6 offset-sm-3 margin-bottom-15">
+    <label for="category" class="form-label">Category</label>
+    <?php
+    include("category.php");
+    ?>
+  </div>
+  <div class="col-6 offset-sm-3 margin-bottom-15">
+  <button type="submit" name="ask" class="btn btn-primary">Ask Question</button>
+
+  </div>
+
 </form>
+
 </div>
