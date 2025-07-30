@@ -1,0 +1,25 @@
+# PHP config
+db.php
+.env
+
+# System/IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+
+# If using composer (optional)
+vendor/
+
+# If using node (optional)
+node_modules/
+
+# Uploads
+uploads/
